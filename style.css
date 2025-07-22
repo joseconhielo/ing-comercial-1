@@ -1,0 +1,32 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+
+#malla {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 8px;
+  padding: 16px;
+}
+
+.ramo {
+  background-color: #d3d3d3; /* gris claro */
+  padding: 12px;
+  border-radius: 8px;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+  transition: transform 0.2s;
+}
+
+.ramo:hover {
+  transform: scale(1.03);
+}
+
+.ramo.aprobado {
+  text-decoration: line-through;
+  color: #000;
+}
